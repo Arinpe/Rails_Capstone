@@ -82,9 +82,9 @@ Open `http://localhost:3000/` in your browser.
 
 👤 **Adesuyi Adetola**
 
-- Github: [@Arinpee](https://github.com/Arinpe)
-- Twitter: [@ShonibareC](https://twitter.com/ShonibareC)
-- Linkedin: [@Adesuyi Adetola] (https://www.linkedin.com/in/aadetola/)
+- Github: [@Arinpe](https://github.com/Arinpe)
+- Twitter: [@_detola_](https://twitter.com/_detola_)
+- Linkedin: [@Adesuyi Adetola](https://www.linkedin.com/in/aadetola/)
 
 
 ## 🤝 Contributing
