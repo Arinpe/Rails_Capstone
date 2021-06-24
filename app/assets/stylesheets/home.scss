@@ -1,0 +1,59 @@
+.img-res {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.img-res2 {
+  height: 120px;
+}
+
+.f-by-img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.sidenav {
+  width: 15%;
+  position: fixed;
+  height: 100%;
+  z-index: 1;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sideb {
+  width: 15%;
+}
+
+.navb {
+  width: 85%;
+}
+
+.navb2 {
+  position: fixed;
+  z-index: 99;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.cover-pic {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}

@@ -1,0 +1,13 @@
+<div class="d-flex flex-wrap align-items-center justify-content-center">
+    <% @users.each do |user| %>
+        <%= link_to user_path(user) do%>
+            <div class="d-flex flex-column card-body m-3 justify-content-center align-items-center">
+
+                <%= user_image(user, class: 'img-res rounded-circle') %>
+
+
+                <h4 class="badge badge-dark"> <%= user.username %> </h4>
+            </div>
+        <% end %>
+    <% end %>
+</div>

@@ -1,0 +1,66 @@
+<div class="container p-0 m-0">
+  <div class="d-flex">
+    <div class="col-8 p-0 m-0 border bg-light">
+        <div class="bg-light">
+
+                <%= user_cover_pic(@user, class: 'cover-pic') %>
+
+            <div class="card-body">
+                <h6 class="pb-0 mb-0"><%= link_to 'My Opinions', user_path(@user), class: "text-dark font-weight-bolder pl-3" %></h6><hr>
+                <div class= "text-muted">
+                    <% @user.opinions.most_recent.each do |opinion| %>
+                        <div class="card-body text-muted">
+                            <p class="fsz text-muted"> <%= opinion.text %> <span><%= link_to 'Delete', opinion_path(opinion), method: :delete, class: 'btn btn-primary btn-sm ml-5 fsz-2' %></span></p>
+                        </div><hr>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container p-0 m-0">
+        <div class="row row-cols-4 p-0 m-0 ">
+            <div class="col-12 border bg-light text-center py-4">
+
+                    <%= user_image(@user, class: "rounded-circle side-img") %>
+
+                <p class="font-weight-bold"> <%= @user.username %></p>
+                <%= display_follow_btn(@user) %>
+
+            </div>
+
+            <div class="col-4 border bg-light">
+            <p class="font-weight-bolder text-center mt-3 mb-0"> <%= @user.opinions.length %> </p>
+            <p class="font-italic text-center font-weight-bolder"> Opinions </p>
+            </div>
+
+            <div class="col-4 border bg-light">
+            <p class="font-weight-bolder text-center mt-3 mb-0"> <%= @user.followed_users.length %> </p>
+            <p class="font-italic text-center font-weight-bolder"> Following </p>
+            </div>
+
+            <div class="col-4 border bg-light">
+            <p class="font-weight-bolder text-center mt-3 mb-0"> <%= @user.followers.length %> </p>
+            <p class="font-italic text-center font-weight-bolder"> Followers </p>
+            </div>
+        </div>
+        <div class="card align-self-stretch">
+            <div class="card-header pb-0">
+                <p class="font-weight-bolder">Followed By</p>
+            </div>
+                <div class="card-body">
+                    <% @user.followers.most_recent[0..3].each do |user| %>
+                        <div class="card-body d-flex py-0">
+
+                            <%= user_image(user, class: "f-by-img rounded-circle") %>
+
+                        <h4 class="font-weight-bolder ml-3 pt-3 fsz"> <%= user.username %> </h4>
+                        </div><hr>
+                    <% end %>
+                </div>
+
+        </div>
+    </div>
+
+</div>

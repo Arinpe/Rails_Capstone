@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="d-flex">
+        <div class=" p-3 text-muted m-0 col-8 border nt">
+                <h3 class="font-weight-bolder"> New Opinion </h3>
+            <div class="card-body p-3">
+                <%= form_with url: "/opinions", method: :post do |form| %>
+                <%= form.text_field :text, class: 'form-control mb-2' %>
+                <%= form.submit "Create", class: "btn btn-primary" %>
+                <% end %>
+            </div>
+        </div>
+
+
+
+    <div class="container">
+        <div class="row row-cols-8 border align-self-stretch">
+            <div class="card-body">
+                <h6 class="pb-0 mb-0 text-muted font-weight-bolder">WHO TO FOLLOW</h6><hr>
+                <div class= "text-muted">
+                    <% @users_to_follow.each do |user| %>
+                        <%= link_to user_path(user) do%>
+                            <div class="d-flex card-body align-items-center">
+                                <% if user.image.attached? %>
+                                    <%= image_tag(user.image, class: "f-by-img rounded-circle") %>
+
+                                <h4 class="badge badge-dark ml-3"> <%= user.username %> </h4>
+                            </div>
+                        <% end %>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <div class= "container">
+          <h6 class="text-muted font-weight-bolder"> Recent Opinions </h6>
+              <% @opinions.each do |tweet| %>
+                <div class='d-flex align-items-center p-3 text-muted'>
+                  <div>
+                    <% if tweet.author.image.attached? %>
+                      <%= image_tag(tweet.author.image, class: "f-by-img rounded-circle") %>
+                    <% else %>
+                      <img src="https://www.bing.com/th?id=OIP._x2YqKMtfxOjkfT8g9xIvQHaG5&w=103&h=100&c=8&rs=1&qlt=90&pid=3.1&rm=2" class="f-by-img" alt="Generic user image">
+                    <% end %>
+                  </div>
+                  <div>
+                    <p class= "pl-3"> <%= tweet.text %> </p>
+                  </div>
+                </div>
+
+              <% end %>
+    </div>
+
+  </div>
+</div>
