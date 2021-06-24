@@ -23,7 +23,7 @@ Some of the advanced concepts explored in this project includes.
 
 ## Live Demo
 
-[Live Demo]( )
+[Live Demo](https://raw.githack.com/Arinpe/Rails_Capstone/tree/development)
 
 ## Video Presentation
 
@@ -44,7 +44,7 @@ Postgres: >=13.2
 
 ~~~bash
 $ git clone https://github.com/Arinpe/Rails_Capstone.git
-$ cd ROR-capstone
+$ cd Rails_Capstone
 ~~~
 
 Install gems with:
