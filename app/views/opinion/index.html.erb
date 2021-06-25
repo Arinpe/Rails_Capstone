@@ -1,7 +1,7 @@
 <div class="container">
     <div class="d-flex">
         <div class=" p-3 text-muted m-0 col-8 border nt">
-                <h3 class="font-weight-bolder"> New Opinion </h3>
+                <h3 class="font-weight-bolder"> New Thoughts </h3>
             <div class="card-body p-3">
                 <%= form_with url: "/opinions", method: :post do |form| %>
                 <%= form.text_field :text, class: 'form-control mb-2' %>
@@ -15,7 +15,7 @@
     <div class="container">
         <div class="row row-cols-8 border align-self-stretch">
             <div class="card-body">
-                <h6 class="pb-0 mb-0 text-muted font-weight-bolder">WHO TO FOLLOW</h6><hr>
+                <h6 class="pb-0 mb-0 text-muted font-weight-bolder">WHO YOU MAY KNOW</h6><hr>
                 <div class= "text-muted">
                     <% @users_to_follow.each do |user| %>
                         <%= link_to user_path(user) do%>
@@ -34,7 +34,7 @@
 
 </div>
     <div class= "container">
-          <h6 class="text-muted font-weight-bolder"> Recent Opinions </h6>
+          <h6 class="text-muted font-weight-bolder"> Recent Thoughts </h6>
               <% @opinions.each do |tweet| %>
                 <div class='d-flex align-items-center p-3 text-muted'>
                   <div>
