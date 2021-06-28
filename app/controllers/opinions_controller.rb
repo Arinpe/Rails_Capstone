@@ -13,6 +13,7 @@ class OpinionsController < ApplicationController
     @opinions = Opinion.all
   end
 
+
   def destroy
     Opinion.destroy(params[:id])
     redirect_to user_path(current_user)

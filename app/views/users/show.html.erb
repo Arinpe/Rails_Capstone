@@ -10,7 +10,7 @@
                 <div class= "text-muted">
                     <% @user.opinions.most_recent.each do |opinion| %>
                         <div class="card-body text-muted">
-                            <p class="fsz text-muted"> <%= opinion.text %> <span><%= link_to 'Delete', opinion_path(opinion), method: :delete, class: 'btn btn-primary btn-sm ml-5 fsz-2' %></span></p>
+                            <p class="fsz text-muted"> <%= opinion.text %> <span><%= button_to 'Delete', opinion_path(opinion), method: :delete, class: 'btn btn-primary btn-sm ml-5 fsz-2' %></span></p>
                         </div><hr>
                     <% end %>
                 </div>
