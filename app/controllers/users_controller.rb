@@ -9,7 +9,6 @@ class UsersController < ApplicationController
   end
 
   def update
-    
     following_user = Following.new(follower_id: current_user.id, followed_id: params[:id])
 
     if following_user.save
