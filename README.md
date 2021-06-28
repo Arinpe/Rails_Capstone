@@ -24,7 +24,8 @@ Some of the advanced concepts explored in this project includes.
 
 ## Live Demo
 
-[Live Demo](https://raw.githack.com/Arinpe/Rails_Capstone/tree/development)
+[Live Demo](https://dashboard.heroku.com/apps/infinite-badlands-49580)
+(https://raw.githack.com/Arinpe/Rails_Capstone/tree/development)
 
 ## Video Presentation
 
