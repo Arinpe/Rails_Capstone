@@ -1,18 +1,18 @@
 development:
-  cloud_name: adewunmi97
-  api_key: '782672862225549'
-  api_secret: DDMaWc-XJddeDReQE3_NnZaOyQg
+  cloud_name: detola
+  api_key: '424585257173232'
+  api_secret: qeFUhwrCZaY-l_bkXd2NeC0fp6w
   enhance_image_tag: true
   static_file_support: false
 production:
-  cloud_name: adewunmi97
-  api_key: '782672862225549'
-  api_secret: DDMaWc-XJddeDReQE3_NnZaOyQg
+  cloud_name: detola
+  api_key: '424585257173232'
+  api_secret: qeFUhwrCZaY-l_bkXd2NeC0fp6w
   enhance_image_tag: true
   static_file_support: true
 test:
-  cloud_name: adewunmi97
-  api_key: '782672862225549'
-  api_secret: DDMaWc-XJddeDReQE3_NnZaOyQg
+  cloud_name: detola
+  api_key: '424585257173232'
+  api_secret: qeFUhwrCZaY-l_bkXd2NeC0fp6w
   enhance_image_tag: true
   static_file_support: false
