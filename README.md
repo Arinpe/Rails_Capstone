@@ -23,8 +23,7 @@ Some of the advanced concepts explored in this project includes.
 
 ## Live Demo
 
-[Live Demo](https://raw.githack.com/Arinpe/Rails_Capstone/tree/development)
-(https://dashboard.heroku.com/apps/desolate-peak-65979)
+[Live Demo](https://infinite-bayou-32292.herokuapp.com/)
 ## Video Presentation
 
 [Loom Link]()
