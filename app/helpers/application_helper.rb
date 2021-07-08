@@ -56,6 +56,7 @@ module ApplicationHelper
     end
   end
 
+
   def user_signed_in
     if user_signed_in?
       current_user.email
@@ -71,5 +72,11 @@ module ApplicationHelper
 
   def auth_component(path)
     render path if current_user
+  end
+end
+
+def display_delete_btn(opinion)
+  if opinion.author.id == current_user.id
+    link_to('Delete', opinion_path(opinion), method: :delete, class: "btn btn-primary btn-sm ml-5 fsz-2")
   end
 end
