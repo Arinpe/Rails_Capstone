@@ -75,7 +75,8 @@ module ApplicationHelper
 end
 
 def display_delete_btn(opinion)
-  if opinion.author.id == current_user.id
-    link_to('Delete', opinion_path(opinion), method: :delete, class: 'btn btn-primary btn-sm ml-5 fsz-2')
-  end
+  return if opinion.author.id != current_user.id
+
+  link_to('Delete', opinion_path(opinion), method: :delete,
+                                           class: 'btn btn-primary btn-sm ml-5 fsz-2')
 end
