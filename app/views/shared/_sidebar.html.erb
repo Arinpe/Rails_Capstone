@@ -1,0 +1,28 @@
+<div class="sidenav d-flex flex-column align-items-center">
+  <%= link_to user_path(current_user) do %>
+  <div class= " d-flex">
+
+      <%= current_user_image(current_user, class: "rounded side-img img-res") %>
+
+    <h5 class= 'text-white-50 ml-2 mt-2'> <%= current_user.username %> </h5>
+  </div>
+  <% end %>
+
+  <div class="d-flex flex-column bd-highlight my-5 text-white-50">
+    <div class="d-flex ">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house-fill mt-2" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+    </svg>
+    <%= link_to 'Home', root_path, class: "mb-3 pl-1" %>
+    </div>
+
+    <div class="d-flex">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-badge-fill  mt-2" viewBox="0 0 16 16">
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm4.5 0a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm5 2.755C12.146 12.825 10.623 12 8 12s-4.146.826-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-.245z"/>
+    </svg>
+
+    <%= link_to 'Users', users_path, class: "mb-3 pl-1" %>
+    </div>
+  </div>
+</div>

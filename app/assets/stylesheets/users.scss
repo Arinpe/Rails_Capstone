@@ -1,0 +1,35 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.side-img {
+  width: 40px;
+  height: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(1000px, auto);
+}
+
+.nested {
+  grid-auto-rows: 200px;
+}
+
+.grid > div {
+  background-color: rgb(238, 238, 238);
+}
+
+.fsz {
+  font-size: 16px;
+}
+
+.nt {
+  height: 200px;
+}
+
+.fsz-2 {
+  font-size: 13px;
+}
