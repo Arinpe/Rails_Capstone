@@ -1,5 +1,5 @@
 # README
-
+Twitter Redesign
  Ruby on Rails Capstone Project: Redesign of Twitter
 
 > In this project I built a Job opinion application based on a redesign of Twitter.
