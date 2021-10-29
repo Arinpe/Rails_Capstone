@@ -2,7 +2,7 @@
 Twitter Redesign
  Ruby on Rails Capstone Project: Redesign of Twitter
 
-> In this project I built a Job opinion application based on a redesign of Twitter.
+> This is a working website demo designed just like like twitter. It is a site which is responsive
 
 Some of the advanced concepts explored in this project includes.
 - Working with advanced associations, many-to-many relationships, a typical twitter follow and follower relationship model.
